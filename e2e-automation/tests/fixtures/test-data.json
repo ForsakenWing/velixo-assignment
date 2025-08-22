@@ -1,0 +1,42 @@
+{
+  "testCells": {
+    "primary": "A1",
+    "secondary": "B1",
+    "formula": "C1",
+    "result": "D1"
+  },
+  "formulas": {
+    "today": "=TODAY()",
+    "now": "=NOW()",
+    "date": "=DATE(2024,1,1)",
+    "simple": "=1+1"
+  },
+  "expectedResults": {
+    "simpleFormula": "2",
+    "dateFormat": "MM/DD/YYYY"
+  },
+  "testWorkbooks": {
+    "temporary": "Test_TODAY_Function",
+    "demo": "Demo_Workbook"
+  },
+  "selectors": {
+    "excel": {
+      "grid": ".ms-Grid, [data-automation-id='grid'], .excel-grid",
+      "cell": "[role='gridcell'], .ms-Grid-cell, .cell",
+      "nameBox": "[data-automation-id='NameBox'], .name-box input, #NameBox",
+      "formulaBar": "[data-automation-id='FormulaBar'], .formula-bar input, #FormulaBar"
+    },
+    "auth": {
+      "signIn": "a[data-task='signin'], .signin-link, [href*='login']",
+      "emailInput": "input[type='email'], input[name='loginfmt'], #i0116",
+      "passwordInput": "input[type='password'], input[name='passwd'], #i0118",
+      "submitButton": "input[type='submit'], button[type='submit'], #idSIButton9"
+    }
+  },
+  "timeouts": {
+    "short": 5000,
+    "medium": 15000,
+    "long": 30000,
+    "extraLong": 60000
+  }
+}

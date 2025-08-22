@@ -1,0 +1,28 @@
+{
+  "excel": {
+    "baseUrl": "https://www.office.com",
+    "credentials": {
+      "username": "YOUR_EMAIL@example.com",
+      "password": "YOUR_PASSWORD"
+    },
+    "timeouts": {
+      "navigation": 60000,
+      "element": 30000,
+      "test": 120000
+    }
+  },
+  "browser": {
+    "headless": false,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "slowMo": 100
+  },
+  "test": {
+    "retries": 2,
+    "screenshotOnFailure": true,
+    "videoOnFailure": true,
+    "cleanupAfterTest": true
+  }
+}
